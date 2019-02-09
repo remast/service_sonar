@@ -1,0 +1,31 @@
+image: golang:1.11.4-stretch
+
+before_script:
+  - echo $CI_bin_REF
+  - echo $CI_PROJECT_DIR
+  - echo $REPO_NAME
+
+stages:
+  - build
+  - sonar
+
+build:
+  stage: build
+  script:
+    - make build
+    - make test
+  artifacts:
+    when: on_success
+    expire_in: 1 day
+    paths:
+      - bin
+
+sonar:
+  stage: sonar
+  image: red6/docker-sonar-scanner:latest
+  script:
+    - sonar-scanner -Dsonar.host.url="$SONAR_HOST" -Dsonar.login="$SONAR_API_TOKEN"
+
+variables:
+  SONAR_HOST: http://sonar.mycompany  .de
+  GO111MODULE: "on"
