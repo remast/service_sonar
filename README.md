@@ -1,6 +1,7 @@
 # Example for SonarQube with Go
 
-Example on static analysis of Go code using SonarQube.
+Example on static analysis of Go code using SonarQube for the blog post [Go for SonarQube](https://medium.com/@remast/go-for-sonarqube-ffff5b74f33a).
+This example uses Go Modules so you need to set `GO_MODULES="on"`.
 
 ## Start SonarQube
 
