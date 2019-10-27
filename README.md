@@ -1,3 +1,4 @@
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=de.red6%3Aservice_sonar)
 # Example for SonarQube with Go
 
 Example on static analysis of Go code using SonarQube for the blog post [Go for SonarQube](https://medium.com/@remast/go-for-sonarqube-ffff5b74f33a).
