@@ -12,3 +12,7 @@ This example uses Go Modules so you need to set `GO_MODULES="on"`.
 ## Run SonarQube analysis
 
     docker run --rm --network host --mount type=volume,src="$(pwd)",dst=/opt/app,type=bind -w=/opt/app red6/docker-sonar-scanner:latest sonar-scanner -Dsonar.login=**SECRET**
+
+## Github Action
+
+This project also uses Github Actions as documented in [Scan your code with SonarCloud](https://github.com/SonarSource/sonarcloud-github-action).
