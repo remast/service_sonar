@@ -27,9 +27,8 @@ jobs:
       uses: actions/download-artifact@v1
       with:
         name: code-coverage-report
-        path: bin/cov.out
-    - run: ls -lah bin/cov.out
-    - run: ls -lah /home/runner/work/service_sonar/service_sonar/bin/cov.out 
+        path: bin
+    - run: ls -lah /home/runner/work/service_sonar/service_sonar/bin
     - run: cat /home/runner/work/service_sonar/service_sonar/bin/cov.out 
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
