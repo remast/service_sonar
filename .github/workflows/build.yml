@@ -19,9 +19,9 @@ jobs:
 
   sonarCloudTrigger:
     name: SonarCloud Trigger
-        uses: actions/download-artifact@v1
-        with:
-          name: code-coverage-report
+      uses: actions/download-artifact@v1
+      with:
+        name: code-coverage-report
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
