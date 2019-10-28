@@ -1,6 +1,17 @@
 on: push
 name: Main Workflow
 jobs:
+  build:
+    name: Compile and Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Setup go
+        uses: actions/setup-go@v1
+        with:
+          go-version: '1.13'
+      - run: make test
+
   sonarCloudTrigger:
     name: SonarCloud Trigger
     runs-on: ubuntu-latest
