@@ -11,6 +11,7 @@ jobs:
         with:
           go-version: '1.13'
       - run: make test
+      - run: cat bin/cov.out 
       - name: Archive code coverage results
         uses: actions/upload-artifact@v1
         with:
@@ -29,6 +30,7 @@ jobs:
         path: bin/cov.out
     - run: ls -lah bin/cov.out
     - run: ls -lah /home/runner/work/service_sonar/service_sonar/bin/cov.out 
+    - run: cat /home/runner/work/service_sonar/service_sonar/bin/cov.out 
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
       env:
