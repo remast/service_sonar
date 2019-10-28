@@ -1,4 +1,4 @@
-[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=de.red6%3Aservice_sonar) ![](https://github.com/remast/service_sonar/workflows/Main Workflow/badge.svg)
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=de.red6%3Aservice_sonar) ![](https://github.com/remast/service_sonar/workflows/Main%20%Workflow/badge.svg)
 # Example for SonarQube with Go
 
 Example on static analysis of Go code using SonarQube for the blog post [Go for SonarQube](https://medium.com/@remast/go-for-sonarqube-ffff5b74f33a).
