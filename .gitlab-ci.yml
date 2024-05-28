@@ -1,4 +1,4 @@
-image: golang:1.18.3-stretch
+image: golang:1.22-stretch
 
 before_script:
   - echo $CI_bin_REF
